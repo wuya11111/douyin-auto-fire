@@ -19,7 +19,7 @@
 
 ## ✨ 已实现功能
 
-- ⏰ **定时自动发送**：支持 GitHub Actions、systemd Timer 等方式定时运行
+- ⏰ **定时自动发送**：支持 GitHub Actions、外部 Cron、systemd Timer 等方式定时运行
 - 💬 **多种消息类型**：支持文字、图片（PNG/JPG/GIF/WebP）和抖音原生表情
 - 🎲 **随机消息**：支持从多条候选消息中随机选择
 - 👥 **多好友支持**：可以同时为多个好友配置发送任务
@@ -40,6 +40,8 @@
 **推荐大多数用户使用。** 无需服务器，电脑也不需要长期在线，Fork 后配置 Secrets 即可每天自动运行。
 
 包含 Cookie 获取、配置生成、GitHub Secrets、Dry Run、定时任务、多账号和失败诊断等完整图文步骤。
+
+如果 GitHub Actions 自带的定时触发不够准，可以使用 [外部 Cron（cron-job.org）触发 →](docs/cron-job.md)。外部 Cron 通过 GitHub API 调用现有工作流，不需要额外部署服务器。
 
 ### 🖥️ [云服务器部署 →](docs/server.md)
 
